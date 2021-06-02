@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+
+    const BORRADOR  = 1;
+    const PUBLICADO = 2;
     use HasFactory;
     protected $guardef = ["id","created_at","udated_at"];
 
