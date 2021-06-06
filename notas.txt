@@ -1,0 +1,2 @@
+- incluir font awesonme con npm (eliminar public/vendor)
+eliminar style en resources\views\livewire\navigation.blade.php
