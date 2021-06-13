@@ -1,2 +1,3 @@
 - incluir font awesonme con npm (eliminar public/vendor)
 eliminar style en resources\views\livewire\navigation.blade.php
+- pasar gilder js a npm y eliminar los cdn
