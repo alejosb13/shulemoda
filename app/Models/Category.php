@@ -28,4 +28,9 @@ class Category extends Model
     {
         return $this->hasManyThrough(Product::class,Subcategory::class);
     }
+
+    public function getRouteKeyname()
+    {
+        return "slug";
+    }
 }

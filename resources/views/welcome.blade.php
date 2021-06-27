@@ -2,9 +2,12 @@
     <div class="container py-8">
         @foreach ($categories as $category)
             <section>
-                <h1 class="text-lg uppercase font-semibold text-gray-700">
-                    {{ $category->name }}
-                </h1>
+                <div class="flex items-center mb-2">
+                    <h1 class="text-lg uppercase font-semibold text-gray-700">
+                        {{ $category->name }}
+                    </h1>
+                    <a href="{{ route("categories.show",$category) }}" class="text-orange-500 font-semibold ml-2 hover:text-orange-400 hover:underline">Ver más</a>
+                </div>
                 @livewire('category-products', ['category' => $category])
             </section>
         @endforeach
